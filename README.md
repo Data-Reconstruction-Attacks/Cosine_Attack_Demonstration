@@ -13,32 +13,41 @@ The Dataset contains:
 
 
 Steps in the Code
+
 Step 1 – Prepare Data
-Extract features: Gender, Height, Weight.
 
+  1) Extract features: Gender, Height, Weight.
+  
+  2) Encode gender: Male = 1, Female = -1.
 
-Encode gender: Male = 1, Female = -1.
-
-
-Convert to NumPy array for computation.
-
+  3) Convert to NumPy array for computation.
 
 Step 2 – Select Samples
-Pick 3 buffer points (list_1) randomly.
 
+  1) Pick 3 buffer points (list_1) randomly.
 
-Pick 1 unknown data point (list_2) randomly.
+  2) Pick 1 unknown data point (list_2) randomly
 
-
-Compute cosine similarities between the unknown point and the 3 buffer points → list_3.
-
+  3) Compute cosine similarities between the unknown point and the 3 buffer points → list_3.
 
 Step 3 – Compute Intersection Direction
-Define compute_direction(axes, list_3) to solve for the intersection direction vector of the cones defined by buffer points.
 
-
-The output is a unit vector pointing to the direction of the unknown data point.
-
+  1) Define compute_direction(axes, list_3) to solve for the intersection direction vector of the cones defined by buffer points.
+  
+  2) The output is a unit vector pointing to the direction of the unknown data point.
 
 Step 4 – Reconstruct the Unknown Point
-Normalize the direction vector into the form:
+
+  1)Normalize the direction vector into the form: (x1 / ​x1 ​​, x1 / ​x2 ​​, x1 / ​x3​​)
+
+  2) Compare this reconstructed vector with the actual unknown sample.
+    
+  3) If they match, the unknown point is successfully reconstructed (attack succeeded).
+
+Step 5 – Visualization
+
+  Use Matplotlib (3D plotting) to visualize:
+
+    1) Cones formed by buffer points and their cosine similarity angles.
+
+    2) The intersection line (direction of the unknown point).
