@@ -48,6 +48,6 @@ Step 5 – Visualization
 
 Use Matplotlib (3D plotting) to visualize:
 
-Cones formed by buffer points and their cosine similarity angles.
+  1) Cones formed by buffer points and their cosine similarity angles.
 
-The intersection line (direction of the unknown point).
+  2) The intersection line (direction of the unknown point).
