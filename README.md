@@ -43,12 +43,3 @@ Step 4 – Reconstruct the Unknown Point
   2) Compare this reconstructed vector with the actual unknown sample.
     
   3) If they match, the unknown point is successfully reconstructed (attack succeeded).
-
-Step 5 – Visualization
-
-  Use Matplotlib (3D plotting) to visualize:
-  
-    1) Cones formed by buffer points and their cosine similarity angles.
-
-    2) The intersection line (direction of the unknown point).
-    
