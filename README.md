@@ -14,27 +14,31 @@ The Dataset contains:
 
 Steps in the Code
 Step 1 – Prepare Data
-
 Extract features: Gender, Height, Weight.
+
 
 Encode gender: Male = 1, Female = -1.
 
+
 Convert to NumPy array for computation.
 
-Step 2 – Select Samples
 
+Step 2 – Select Samples
 Pick 3 buffer points (list_1) randomly.
+
 
 Pick 1 unknown data point (list_2) randomly.
 
+
 Compute cosine similarities between the unknown point and the 3 buffer points → list_3.
 
-Step 3 – Compute Intersection Direction
 
+Step 3 – Compute Intersection Direction
 Define compute_direction(axes, list_3) to solve for the intersection direction vector of the cones defined by buffer points.
+
 
 The output is a unit vector pointing to the direction of the unknown data point.
 
-Step 4 – Reconstruct the Unknown Point
 
+Step 4 – Reconstruct the Unknown Point
 Normalize the direction vector into the form:
