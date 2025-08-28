@@ -38,7 +38,7 @@ Step 3 – Compute Intersection Direction
 
 Step 4 – Reconstruct the Unknown Point
 
-  1)Normalize the direction vector into the form: (x1 / ​x1 ​​, x1 / ​x2 ​​, x1 / ​x3​​)
+  1)Normalize the direction vector into the form: (x1 / ​x1 ​​, x2 / ​x1 ​​, x3 / ​x1​​)
 
   2) Compare this reconstructed vector with the actual unknown sample.
     
@@ -48,6 +48,6 @@ Step 5 – Visualization
 
 Use Matplotlib (3D plotting) to visualize:
 
-  1) Cones formed by buffer points and their cosine similarity angles.
+  1) Cones formed by buffer(known) points and their cosine similarity angles.
 
   2) The intersection line (direction of the unknown point).
