@@ -42,7 +42,7 @@ Prepare Data
 
 ***Step 3 – Reconstruct the Unknown Point***
 
-  1)Normalize the direction vector into the form: (x1 / ​x1 ​​, x2 / ​x1 ​​, x3 / ​x1​​) 
+  1) Normalize the direction vector into the form: (x1 / ​x1 ​​, x2 / ​x1 ​​, x3 / ​x1​​) 
 
   2) Compare this reconstructed vector with the actual unknown sample.
     
