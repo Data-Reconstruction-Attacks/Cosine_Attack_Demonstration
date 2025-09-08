@@ -21,6 +21,8 @@ Prepare Data
   3) Convert to NumPy array for further computation.
 
 
+
+
 **Phase - 1**
 
 ***Step 1 – Select Samples***
@@ -36,6 +38,9 @@ Prepare Data
   1) Define compute_direction(axes, list_3) to solve for the intersection direction vector of the cones defined by buffer points.
   
   2) The output is a unit vector pointing to the direction of the hidden data point.
+
+
+
 
 
 **Phase - 2**
